@@ -12,3 +12,18 @@ def kelvin_to_celsius(k):
 
 def log_conversion(value, unit_from, unit_to, result):
     history.append(f"{value}{unit_from} -> {result:.2f}{unit_to}")
+
+def convert(value, unit_from, unit_to):
+    if unit_from == "C" and unit_to == "F":
+        result = celsius_to_fahrenheit(value)
+    elif unit_from == "C" and unit_to == "K":
+        result = celsius_to_kelvin(value)
+    elif unit_from == "F" and unit_to == "C":
+        result = fahrenheit_to_celsius(value)
+    elif unit_from == "K" and unit_to == "C":
+        result = kelvin_to_celsius(value)
+    else:
+        raise ValueError(f"Unsupported conversion: {unit_from} -> {unit_to}")
+
+    log_conversion(value, unit_from, unit_to, result)
+    return result

@@ -31,3 +31,8 @@ def convert(value, unit_from, unit_to):
 def print_history():
     for entry in history:
         print(entry)
+
+def main():
+    print(convert(0, "C", "F"))
+    print(convert(100, "C", "K"))
+    print(convert(98.6, "F", "C"))

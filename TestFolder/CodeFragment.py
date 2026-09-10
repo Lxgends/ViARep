@@ -16,3 +16,8 @@ def get_highest(students, name):
     if name in students and students[name]:
         return max(students[name])
     return None
+
+def get_lowest(students, name):
+    if name in students and students[name]:
+        return min(students[name])
+    return None

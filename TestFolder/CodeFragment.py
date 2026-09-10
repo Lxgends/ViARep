@@ -21,7 +21,8 @@ def get_lowest(students, name):
     if name in students and students[name]:
         return min(students[name])
     return None
-    
+
 def print_report(students):
     for name, grades in students.items():
         avg = get_average(students, name)
+        print(f"{name}: grades={grades}, avg={avg:.2f}")

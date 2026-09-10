@@ -27,3 +27,7 @@ def convert(value, unit_from, unit_to):
 
     log_conversion(value, unit_from, unit_to, result)
     return result
+
+def print_history():
+    for entry in history:
+        print(entry)

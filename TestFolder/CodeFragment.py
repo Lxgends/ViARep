@@ -40,3 +40,6 @@ def main():
     add_grade(students, "Juris", 7)
 
     print_report(students)
+
+if __name__ == "__main__":
+    main()

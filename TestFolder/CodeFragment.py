@@ -28,3 +28,15 @@ def print_report(students):
         highest = get_highest(students, name)
         lowest = get_lowest(students, name)
         print(f"{name}: grades={grades}, avg={avg:.2f}, highest={highest}, lowest={lowest}")
+
+def main():
+    students = {}
+    add_student(students, "Anna")
+    add_student(students, "Juris")
+
+    add_grade(students, "Anna", 8)
+    add_grade(students, "Anna", 9)
+    add_grade(students, "Juris", 6)
+    add_grade(students, "Juris", 7)
+
+    print_report(students)

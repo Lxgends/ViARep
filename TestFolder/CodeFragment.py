@@ -11,3 +11,8 @@ def get_average(students, name):
     if name in students and students[name]:
         return sum(students[name]) / len(students[name])
     return 0
+
+def get_highest(students, name):
+    if name in students and students[name]:
+        return max(students[name])
+    return None

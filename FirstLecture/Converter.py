@@ -36,3 +36,4 @@ def main():
     print(convert(0, "C", "F"))
     print(convert(100, "C", "K"))
     print(convert(98.6, "F", "C"))
+    print(convert(0, "K", "C"))

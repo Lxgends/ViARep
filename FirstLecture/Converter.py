@@ -39,4 +39,5 @@ def main():
     print(convert(0, "K", "C"))
     print_history()
 
-    
+if __name__ == "__main__":
+    main()

@@ -25,4 +25,6 @@ def get_lowest(students, name):
 def print_report(students):
     for name, grades in students.items():
         avg = get_average(students, name)
-        print(f"{name}: grades={grades}, avg={avg:.2f}")
+        highest = get_highest(students, name)
+        lowest = get_lowest(students, name)
+        print(f"{name}: grades={grades}, avg={avg:.2f}, highest={highest}, lowest={lowest}")

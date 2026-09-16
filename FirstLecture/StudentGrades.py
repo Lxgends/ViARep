@@ -38,7 +38,7 @@ def main():
     add_grade(students, "Anna", 9)
     add_grade(students, "Juris", 6)
     add_grade(students, "Juris", 7)
-
+ 
     print_report(students)
 
 if __name__ == "__main__":
